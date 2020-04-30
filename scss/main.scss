@@ -181,6 +181,15 @@ header {
 
 .menu__item {
 	transition: 0.5s;
+	
+	&:not(.link--active) {
+		border-bottom: 5px solid transparent;
+	}
+
+	&:hover, &:focus {
+		border-bottom: 5px solid #11749e91;
+	}
+
   a {
     color: white;
 		text-decoration: none;
@@ -269,10 +278,9 @@ header {
 		font-size: 14px;
 	}
 
-	button {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+	a {
+		text-decoration: none;
+		text-align: center;
 		color: #fff;
 		width: 25px;
 		height: 25px;
@@ -284,6 +292,7 @@ header {
 		border-radius: 50%;
 
 		i {
+			line-height: 25px;
 			display: block;
 		}
 	}

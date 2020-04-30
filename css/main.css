@@ -205,6 +205,14 @@ header {
   transition: 0.5s;
 }
 
+.menu__item:not(.link--active) {
+  border-bottom: 5px solid transparent;
+}
+
+.menu__item:hover, .menu__item:focus {
+  border-bottom: 5px solid #11749e91;
+}
+
 .menu__item a {
   color: white;
   text-decoration: none;
@@ -311,16 +319,9 @@ header {
   font-size: 14px;
 }
 
-.scroll-down button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.scroll-down a {
+  text-decoration: none;
+  text-align: center;
   color: #fff;
   width: 25px;
   height: 25px;
@@ -332,7 +333,8 @@ header {
   border-radius: 50%;
 }
 
-.scroll-down button i {
+.scroll-down a i {
+  line-height: 25px;
   display: block;
 }
 
